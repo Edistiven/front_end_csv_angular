@@ -1,0 +1,30 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            
+            <th>NUM_IDENT</th>
+            <th>NOMBRE</th>
+            <th>GENERO</th>
+            <th>ESTADO_CIVIL</th>
+            <th>FECHA_NACIMIENTO</th>
+            <th>TELEFONO</th>
+            <th>DIRECCION</th>
+            <th>EMAIL</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of personas">
+            
+            <td>{{item.num_ident}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.genero}}</td>
+            <td>{{item.estado_civil}}</td>
+            <td>{{item.fecha_nacimiento}}</td>
+            <td>{{item.telefono}}</td>
+            <td>{{item.direccion}}</td>
+            <td>{{item.email}}</td>
+          
+        </tr>
+    </tbody>
+</table>

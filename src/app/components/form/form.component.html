@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <div class="card text-left">
+        <div class="card-header bg-dark text-white">
+            <h4 class="card-title">Insertar nuevo registro</h4>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descripción</label>
+                <textarea class="form-control" placeholder="Escriba una breve descripción"
+                    id="exampleFormControlTextarea1" rows="" [(ngModel)]="data.descripcion"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Archivo: </label><br>
+                <input type="file" (change)="handleFileInput($event.target.files)">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" (click)="guardar()"><i class="fas fa-save"></i> Guardar</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <app-list-records></app-list-records>
+</div>
+
+

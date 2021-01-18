@@ -1,0 +1,24 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            
+            <th>ID REGISTRO</th>
+            <th>DESCRIPCION</th>
+            <th>FECHA</th>
+            <th>VER</th>
+    
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of registros">
+            
+            <td>{{item.id_registro}}</td>
+            <td>{{item.descripcion}}</td>
+            <td>{{item.fecha}}</td>
+            <td><a class="btn btn-primary" routerLink="/list/{{item.id_registro}}" >Ver</a></td>
+            
+          
+        </tr>
+    </tbody>
+</table>
